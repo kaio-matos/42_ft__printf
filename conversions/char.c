@@ -14,7 +14,5 @@
 
 int	deal_with_c(char arg)
 {
-	if (arg > 127)
-		arg %= 256;
 	return (ft_putchar(arg));
 }
