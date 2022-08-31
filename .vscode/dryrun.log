@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/coder/Desktop/projects/ft_printf'
+cc -Wall -Wextra -Werror main.c ft_printf.c deal.c ./slot/slot.c ./slot/utils.c ./conversions/char.c ./conversions/string.c  ./utils/ft_put.c ./libft/libft.a -o ft_printf
+./ft_printf 
+make: Leaving directory '/home/coder/Desktop/projects/ft_printf'
+ 

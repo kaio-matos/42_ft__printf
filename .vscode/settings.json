@@ -1,0 +1,21 @@
+{
+    "editor.tabSize": 2,
+    "files.associations": {
+        "Makefile": "makefile",
+        "ft_printf.h": "c",
+        "libft.h": "c",
+        "unistd.h": "c",
+        "cstdarg": "c",
+        "stdlib.h": "c",
+        "conversions.h": "c",
+        "stdio.h": "c",
+        "slot.h": "c",
+        "makefile": "c",
+        "string_view": "c",
+        "printf.h": "c",
+        "utils.h": "c",
+        "sstream": "c",
+        "stdarg.h": "c"
+    },
+    "terminal.integrated.gpuAcceleration": "canvas"
+}
