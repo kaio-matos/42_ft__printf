@@ -6,11 +6,11 @@
 /*   By: kmatos-s <kmatos-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 16:33:41 by kmatos-s          #+#    #+#             */
-/*   Updated: 2022/08/05 01:42:37 by kmatos-s         ###   ########.fr       */
+/*   Updated: 2022/09/01 00:21:53 by kmatos-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "slot.h"
+#include <ft_printf.h>
 
 static int	get_slot_length(char *string)
 {

@@ -6,11 +6,11 @@
 /*   By: kmatos-s <kmatos-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 02:22:03 by coder             #+#    #+#             */
-/*   Updated: 2022/08/05 01:11:28 by kmatos-s         ###   ########.fr       */
+/*   Updated: 2022/09/01 00:24:56 by kmatos-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "conversions.h"
+#include <ft_printf.h>
 
 int	deal_with_i(int arg)
 {

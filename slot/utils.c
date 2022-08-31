@@ -6,11 +6,11 @@
 /*   By: kmatos-s <kmatos-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 16:35:50 by kmatos-s          #+#    #+#             */
-/*   Updated: 2022/08/05 01:16:08 by kmatos-s         ###   ########.fr       */
+/*   Updated: 2022/09/01 00:22:06 by kmatos-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "slot.h"
+#include <ft_printf.h>
 
 int	ft_isconversion(char c)
 {

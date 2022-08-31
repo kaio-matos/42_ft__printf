@@ -6,11 +6,11 @@
 /*   By: kmatos-s <kmatos-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 01:07:54 by kmatos-s          #+#    #+#             */
-/*   Updated: 2022/08/05 01:14:06 by kmatos-s         ###   ########.fr       */
+/*   Updated: 2022/09/01 00:21:50 by kmatos-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "utils.h"
+#include <ft_printf.h>
 
 int	ft_putchar(char c)
 {

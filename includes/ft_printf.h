@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   slot.h                                             :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmatos-s <kmatos-s@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/30 16:33:30 by kmatos-s          #+#    #+#             */
-/*   Updated: 2022/08/05 01:53:15 by kmatos-s         ###   ########.fr       */
+/*   Created: 2022/07/27 00:33:43 by coder             #+#    #+#             */
+/*   Updated: 2022/09/01 01:00:54 by kmatos-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SLOT_H
-# define SLOT_H
-# include "../ft_printf.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# include <libft.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdarg.h>
 
 typedef struct s_slot
 {
@@ -22,6 +25,24 @@ typedef struct s_slot
 	int		p_end;
 	int		length;
 }	t_slot;
+
+int		ft_printf(const char *str, ...);
+int		deal_args(t_slot finded, va_list args, int printed);
+
+int		ft_putchar(char c);
+int		ft_putstrn(char	*str, int n);
+int		ft_putstr(char	*str);
+int		ft_putnbase(unsigned long long nb, char *base);
+
+int		deal_with_c(char arg);
+int		deal_with_d(int arg);
+int		deal_with_i(int arg);
+int		deal_with_p(long long int arg);
+int		deal_with_s(char *arg);
+int		deal_with_u(unsigned int arg);
+int		deal_with_x(unsigned int arg);
+int		deal_with_x_upper(unsigned int arg);
+int		deal_with_percent(char arg);
 
 /**
  * @brief Checks if a determined character is a printf conversion

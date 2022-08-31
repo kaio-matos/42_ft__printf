@@ -6,7 +6,7 @@
 #    By: kmatos-s <kmatos-s@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/16 01:21:46 by kmatos-s          #+#    #+#              #
-#    Updated: 2022/08/31 01:21:05 by kmatos-s         ###   ########.fr        #
+#    Updated: 2022/09/01 01:03:23 by kmatos-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,9 @@ NAME = libftprintf.a
 
 CC = cc
 CCF_STRICT = -Wall -Wextra -Werror
+INCLUDE_LIBFT = ./libft
+INCLUDE_PATH = ./includes
+CCF_INCLUDES = -I $(INCLUDE_PATH) -I $(INCLUDE_LIBFT)
 CCF_DEBUG = -g
 
 CONVERSIONS_SOURCES = conversions/char.c\
@@ -37,13 +40,13 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	make all -C ./libft
 	cp ./libft/libft.a libftprintf.a
-	ar -crs $(NAME) $(OBJS)
+	ar -rcs $(NAME) $(OBJS)
 
 %.o : %.c
-	$(CC) $(CCF_STRICT) -c $< -o $@
+	$(CC) $(CCF_STRICT) $(CCF_INCLUDES) -c $< -o $@
 
 debug: $(NAME)
-	$(CC) $(CCF_DEBUG) main.c $(SRCS) ./libft/libft.a -o main.x
+	$(CC) $(CCF_DEBUG) $(CCF_INCLUDES) main.c $(SRCS) ./libft/libft.a -o main.x
 
 clean:
 	make clean -C libft
