@@ -11,7 +11,6 @@ The third project of the 42 school consists in replicating the original printf b
 The steps to execute are inside the Makefile. But with Make installed just run `make` in the terminal to compile the library, now you can compile a program with some main to use the ft_printf function.
 
 ```c
-#include <libft.h>
 #include <ft_printf.h>
 
 int main(void)
@@ -25,7 +24,7 @@ int main(void)
 To compile and run this program with the library execute the next command:
 
 ```sh
-gcc libftprintf.a main.c -I ./includes -I ./libft
+gcc main.c libftprintf.a -I ./includes -I ./libft
 ```
 
 ### Note
